@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(0, 0, 0);
+}
+.btn {
+  height: 100px;
+  width: 200px;
+  background: rgb(0, 0, 0);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;  
+  transition: 0.5s linear;
+}
+.btn:hover {
+  box-shadow: 0 0 10px rgb(0, 255, 106), 0 0 20px rgb(182, 10, 229),
+    0 0 40px rgb(255, 0, 174), 0 0 60px rgb(0, 255, 106),
+    0 0 80px rgb(0, 255, 106), 0 0 100px rgb(0, 255, 106),
+    0 0 130px rgb(235, 58, 9), 0 0 160px rgb(182, 10, 229),
+    0 0 200px rgb(255, 0, 43), 0 0 250px rgb(255, 0, 174);
+}
+button {
+  height: 100%;
+  width: 100%;
+  border-radius: 100px; 
+  color: rgb(235, 230, 230);
+  background: rgb(21, 21, 21);
+  border: none;
+  position: relative;
+  z-index: 10;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.border {
+  height: 200px;
+  width: 70px;
+  background: linear-gradient(rgb(255, 0, 43), blue);
+  position: absolute;
+  animation: border 2s linear infinite;
+}
+
+@keyframes border {
+  from {
+    transform: translate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
